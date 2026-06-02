@@ -22,8 +22,8 @@ format:
 	nbqa isort notebook.ipynb
 
 strip-outputs:
-	nbstripout notebook.ipynb
-	@echo "Notebook outputs stripped"
+	python3 -m nbstripout --extra-keys 'metadata.kernelspec metadata.language_info.version' notebook.ipynb
+	@echo "Notebook outputs and metadata stripped"
 
 clean:
 	find . -type f -name "*.pyc" -delete
