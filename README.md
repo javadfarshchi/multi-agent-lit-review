@@ -15,6 +15,8 @@ Given a natural-language query such as *"Adverse events with mRNA vaccines in pe
 
 No cloud credentials, no GPU, and no proprietary data are required. Everything runs on CPU from a single Jupyter notebook.
 
+**View the notebook with full outputs:** [`notebook_executed.ipynb`](notebook_executed.ipynb) or [rendered on nbviewer](https://nbviewer.org/github/javadfarshchi/multi-agent-lit-review/blob/main/notebook_executed.ipynb)
+
 ---
 
 ## Pipeline Architecture
@@ -48,7 +50,8 @@ The pipeline has five stages:
 ```
 multi-agent-lit-review/
 |
-|- notebook.ipynb                   Main deliverable -- 5 sections
+|- notebook.ipynb                   Clean source notebook (no outputs, run this yourself)
+|- notebook_executed.ipynb          Executed reference copy with full outputs
 |
 |- requirements.txt                 Runtime dependencies (pinned)
 |- requirements-dev.txt             Dev tooling (linting, testing, nbstripout)
@@ -128,6 +131,17 @@ Run all linting checks:
 ```bash
 make lint
 ```
+
+---
+
+## Notebook Files
+
+| File | Description |
+|---|---|
+| [`notebook.ipynb`](notebook.ipynb) | Clean source notebook -- no outputs, use this to run the pipeline yourself |
+| [`notebook_executed.ipynb`](notebook_executed.ipynb) | Executed reference copy with full outputs -- use this to review results without running anything |
+
+**Rendered on nbviewer (no install needed):** [notebook_executed.ipynb on nbviewer](https://nbviewer.org/github/javadfarshchi/multi-agent-lit-review/blob/main/notebook_executed.ipynb)
 
 ---
 
