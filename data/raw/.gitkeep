@@ -1,0 +1,7 @@
+This directory holds raw data files fetched from external sources.
+
+Raw data is NOT committed to the repository.
+
+To populate this directory, run the notebook from Section 1 (Setup and Data Access).
+The notebook fetches articles directly from the PMC Open Access S3 bucket
+(s3://pmc-oa-opendata) using anonymous access - no credentials required.

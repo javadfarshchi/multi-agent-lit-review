@@ -1,0 +1,8 @@
+This directory holds generated outputs from the pipeline.
+
+Generated outputs are NOT committed to the repository.
+
+After running the full notebook, the following files will be created here:
+  literature_review_report.md   -- formatted Markdown report for all 3 queries
+  pipeline_results.json         -- structured JSON with all retrieved articles,
+                                   summaries, keywords, and verification scores

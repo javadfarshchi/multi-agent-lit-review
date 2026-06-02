@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it using the metadata below."
+type: software
+title: "Multi-Agent Workflow for Biomedical Literature Review"
+abstract: >
+  A three-agent pipeline (Retriever, Summarizer, Verifier) that retrieves,
+  summarizes, and fact-checks PubMed Central Open Access articles for a given
+  biomedical research query. Built as an AI engineering portfolio case study.
+authors:
+  - family-names: "Javad"
+    given-names: ""
+version: "1.0.0"
+date-released: "2026-06-01"
+license: MIT
+url: "https://github.com/javadfarshchi/multi-agent-lit-review"
+keywords:
+  - biomedical-nlp
+  - retrieval-augmented-generation
+  - pubmed-central
+  - multi-agent
+  - summarization
+  - natural-language-inference
+  - transformers
+  - python
+  - jupyter

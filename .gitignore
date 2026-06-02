@@ -1,0 +1,122 @@
+# =============================================================================
+# Python
+# =============================================================================
+__pycache__/
+*.py[codz]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.python-version
+# =============================================================================
+# Jupyter
+# =============================================================================
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+profile_default/
+ipython_config.py
+
+# Executed notebook outputs are stripped by nbstripout on commit.
+# The executed reference copy is intentionally excluded.
+notebook_executed.ipynb
+
+# =============================================================================
+# ML / Data Science
+# =============================================================================
+
+# Data files — obtain via instructions in README
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Model weights and caches
+*.pkl
+*.pickle
+*.h5
+*.pt
+*.pth
+*.onnx
+*.bin
+*.safetensors
+models/
+checkpoints/
+
+# HuggingFace model cache
+~/.cache/huggingface/
+
+# Experiment tracking
+mlruns/
+wandb/
+.neptune/
+lightning_logs/
+
+# Vector stores and indices
+faiss_index/
+chroma_db/
+*.index
+*.faiss
+
+# Generated outputs — tracked separately in outputs/
+outputs/*.csv
+outputs/*.json
+outputs/*.md
+!outputs/.gitkeep
+
+# =============================================================================
+# Secrets and credentials
+# =============================================================================
+.env
+.env.*
+!.env.example
+secrets.yaml
+secrets.json
+config/secrets.py
+*.pem
+*.key
+credentials.json
+service_account.json
+
+# =============================================================================
+# IDE and OS
+# =============================================================================
+.vscode/settings.json
+.vscode/*.code-workspace
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.DS_Store?
+Thumbs.db
+desktop.ini
+
+# OpenCode AI assistant config (local only)
+.claude/
+.opencode/
+
+# =============================================================================
+# Testing and coverage
+# =============================================================================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# =============================================================================
+# Misc
+# =============================================================================
+*.log
+*.tmp
+*.bak
+Zone.Identifier
+*Zone.Identifier
