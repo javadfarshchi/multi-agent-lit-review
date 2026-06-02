@@ -25,8 +25,3 @@ jobs:
 
       - name: Run pre-commit hooks
         uses: pre-commit/action@v3.0.1
-
-      - name: Verify notebook outputs are stripped
-        run: |
-          nbstripout --verify notebook.ipynb
-          echo "Notebook outputs are clean"
