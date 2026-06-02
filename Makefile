@@ -23,7 +23,8 @@ format:
 
 strip-outputs:
 	python3 -m nbstripout --extra-keys 'metadata.kernelspec metadata.language_info.version' notebook.ipynb
-	@echo "Notebook outputs and metadata stripped"
+	python3 -m nbstripout --keep-output --extra-keys 'metadata.kernelspec metadata.language_info.version metadata.widgets' notebook_executed.ipynb
+	@echo "Notebook metadata stripped (outputs preserved in notebook_executed.ipynb)"
 
 clean:
 	find . -type f -name "*.pyc" -delete
